@@ -1,0 +1,6729 @@
+[
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "GetAllActi",
+    "RelativePath": "api/Activite",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "CreateActi",
+    "RelativePath": "api/Activite",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Acti",
+        "Type": "UCP_API.models.Activite",
+        "IsRequired": true
+      },
+      {
+        "Name": "idProjet",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "UpdateActi",
+    "RelativePath": "api/Activite",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Activite",
+        "Type": "UCP_API.models.Activite",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "DeleteActi",
+    "RelativePath": "api/Activite/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "GetActi",
+    "RelativePath": "api/Activite/activite/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "GetAllActiviteByProjet",
+    "RelativePath": "api/Activite/activitesbybudget/{idProjet}/{numbud}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProjet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "numbud",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "GetAllActiByProjet",
+    "RelativePath": "api/Activite/activitesbyprojet/{idProjet}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProjet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "GetAllActiviteTom",
+    "RelativePath": "api/Activite/activitesTom/{idProjet}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProjet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "GetAllBudgetByProjet",
+    "RelativePath": "api/Activite/budgetbyexercice/{idProjet}/{numbud}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProjet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "numbud",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "GetAllExerciceByProjet",
+    "RelativePath": "api/Activite/exercicesbyprojet/{idProjet}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProjet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "GetAllActiviteByProjet",
+    "RelativePath": "api/Activite/montantbyactivite/{idProjet}/{numbud}/{acti}/{exercice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProjet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "numbud",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "acti",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "exercice",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ActiviteController",
+    "Method": "GetAllActiviteByProjetAnnuel",
+    "RelativePath": "api/Activite/montantbyactiviteannuel/{idProjet}/{numbud}/{acti}/{exercice}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProjet",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "numbud",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "acti",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "exercice",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.AgmoController",
+    "Method": "GetAllAgmos",
+    "RelativePath": "api/Agmo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.AgmoController",
+    "Method": "CreateAgmo",
+    "RelativePath": "api/Agmo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Agmo",
+        "Type": "UCP_API.models.Agmo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.AgmoController",
+    "Method": "UpdateAgmo",
+    "RelativePath": "api/Agmo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Agmo",
+        "Type": "UCP_API.models.Agmo",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.AgmoController",
+    "Method": "GetAgmo",
+    "RelativePath": "api/Agmo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.AgmoController",
+    "Method": "DeleteAgmo",
+    "RelativePath": "api/Agmo/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.AgmoController",
+    "Method": "GetStorage",
+    "RelativePath": "api/Agmo/getstorage/{idAgmo}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idAgmo",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "ListeNumeroJustificatif",
+    "RelativePath": "api/Bord/listenumerojustificatif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "ListeNumeroRequete",
+    "RelativePath": "api/Bord/listenumerorequete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "ListeRefInterneJustificatif",
+    "RelativePath": "api/Bord/listerefinternejustificatif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "ListeRefInterneRequete",
+    "RelativePath": "api/Bord/listerefinternerequete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb10Requete",
+    "RelativePath": "api/Bord/tdb10requete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb10RequeteDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb11Requete",
+    "RelativePath": "api/Bord/tdb11statrequete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb11RequeteDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb12Justificatif",
+    "RelativePath": "api/Bord/tdb12statjustificatif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb12JustifDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb13RequeteJustificatif",
+    "RelativePath": "api/Bord/tdb13requetejustif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb13RequeteJustifDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb14RequeteJustificatif",
+    "RelativePath": "api/Bord/tdb14requetejustif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb14RequeteJustifDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb15RequeteJustificatif",
+    "RelativePath": "api/Bord/tdb15requete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb6RequeteDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb16RequeteJustificatif",
+    "RelativePath": "api/Bord/tdb16requetejustif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb16RequeteJustifDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb1Requete",
+    "RelativePath": "api/Bord/tdb1requete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb1RequeteDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb2Justificatif",
+    "RelativePath": "api/Bord/tdb2justificatif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb2JustifDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb3Requete",
+    "RelativePath": "api/Bord/tdb3requete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb3RequeteDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb5Requete",
+    "RelativePath": "api/Bord/tdb5requete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb5RequeteDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb6Requete",
+    "RelativePath": "api/Bord/tdb6requete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb6RequeteDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb7Justificatif",
+    "RelativePath": "api/Bord/tdb7justificatif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb7JustifDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb8Requete",
+    "RelativePath": "api/Bord/tdb8requete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb8RequeteDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.BordController",
+    "Method": "Tdb9Justificatif",
+    "RelativePath": "api/Bord/tdb9justificatif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.Tdb9JustifDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueController",
+    "Method": "GetAllCategorieRubriquex",
+    "RelativePath": "api/CategorieRubrique",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueController",
+    "Method": "UpdateCategorieRubrique",
+    "RelativePath": "api/CategorieRubrique",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CategorieRubrique",
+        "Type": "UCP_API.models.CategorieRubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueController",
+    "Method": "CreateCategorieRubrique",
+    "RelativePath": "api/CategorieRubrique",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CategorieRubrique",
+        "Type": "UCP_API.models.CategorieRubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueController",
+    "Method": "GetCategorieRubrique",
+    "RelativePath": "api/CategorieRubrique/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueController",
+    "Method": "DeleteCategorieRubrique",
+    "RelativePath": "api/CategorieRubrique/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueController",
+    "Method": "GetCategorieRubriquesByRequete",
+    "RelativePath": "api/CategorieRubrique/requete/{idRequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueController",
+    "Method": "GetCategorieRubriquesByTypeRubrique",
+    "RelativePath": "api/CategorieRubrique/type/{idTypeRubrique}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idTypeRubrique",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueColonneController",
+    "Method": "GetAllCategorieRubriqueColonnex",
+    "RelativePath": "api/CategorieRubriqueColonne",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueColonneController",
+    "Method": "CreateCategorieRubriqueColonne",
+    "RelativePath": "api/CategorieRubriqueColonne",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CategorieRubriqueColonne",
+        "Type": "UCP_API.models.CategorieRubriqueColonne",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueColonneController",
+    "Method": "UpdateCategorieRubriqueColonne",
+    "RelativePath": "api/CategorieRubriqueColonne",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CategorieRubriqueColonne",
+        "Type": "UCP_API.models.CategorieRubriqueColonne",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueColonneController",
+    "Method": "GetCategorieRubriqueColonne",
+    "RelativePath": "api/CategorieRubriqueColonne/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueColonneController",
+    "Method": "DeleteCategorieRubriqueColonne",
+    "RelativePath": "api/CategorieRubriqueColonne/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueColonneController",
+    "Method": "CreateCategorieRubriqueColonnes",
+    "RelativePath": "api/CategorieRubriqueColonne/batch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CategorieRubriqueColonnes",
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.models.CategorieRubriqueColonne, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CategorieRubriqueColonneController",
+    "Method": "GetAllCategorieRubriqueColonnesByCategorie",
+    "RelativePath": "api/CategorieRubriqueColonne/categorie/{idCategorieRubrique}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategorieRubrique",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "GetAllCircuit",
+    "RelativePath": "api/Circuit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "GetCircuit",
+    "RelativePath": "api/Circuit/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "DeleteCircuit",
+    "RelativePath": "api/Circuit/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "UpdateCircuit",
+    "RelativePath": "api/Circuit/{idcircuit}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idcircuit",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "updatedCircuit",
+        "Type": "UCP_API.dto.CreateCircuitDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "CreateCircuit",
+    "RelativePath": "api/Circuit/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Circuit",
+        "Type": "UCP_API.dto.CreateCircuitDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "DisableCircuit",
+    "RelativePath": "api/Circuit/disabled/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "DuplicateCircuit",
+    "RelativePath": "api/Circuit/duplicate/{idcircuit}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idcircuit",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "newLibelle",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "GetCircuitEtapeById",
+    "RelativePath": "api/Circuit/getetape/{idetape}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idetape",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "GetCircuitEtapeByIdJustif",
+    "RelativePath": "api/Circuit/getetapejustif/{idjustif}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "GetCircuitEtapeValidateurEtapeNextFirst",
+    "RelativePath": "api/Circuit/getetapenextfirst/{idetape}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idetape",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "GetCircuitEtapeValidateurEtapeNextSeconde",
+    "RelativePath": "api/Circuit/getetapenextseconde/{idetape}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idetape",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "GetCircuitEtapePrevious",
+    "RelativePath": "api/Circuit/getetapeprevious/{idetape}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idetape",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "GetCircuitEtapeByIdRequete",
+    "RelativePath": "api/Circuit/getetaperequete/{idrequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "GetCircuitByUtilisateurProjet",
+    "RelativePath": "api/Circuit/utilisateur_projet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.CircuitController",
+    "Method": "GetCircuitV2",
+    "RelativePath": "api/Circuit/V2/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CircuitEtapeController",
+    "Method": "GetAllCircuitEtapex",
+    "RelativePath": "api/CircuitEtape",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CircuitEtapeController",
+    "Method": "CreateCircuitEtape",
+    "RelativePath": "api/CircuitEtape",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CircuitEtape",
+        "Type": "UCP_API.models.CircuitEtape",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CircuitEtapeController",
+    "Method": "UpdateCircuitEtape",
+    "RelativePath": "api/CircuitEtape",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CircuitEtape",
+        "Type": "UCP_API.models.CircuitEtape",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CircuitEtapeController",
+    "Method": "GetCircuitEtape",
+    "RelativePath": "api/CircuitEtape/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CircuitEtapeController",
+    "Method": "DeleteCircuitEtape",
+    "RelativePath": "api/CircuitEtape/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.CircuitEtapeController",
+    "Method": "GetCircuitEtapeByCircuit",
+    "RelativePath": "api/CircuitEtape/circuit/{idCircuit}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCircuit",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.DashboardController",
+    "Method": "GetRequetesEnRetard",
+    "RelativePath": "api/Dashboard/retard-validation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.DashboardMontantController",
+    "Method": "GetMontantRequetes",
+    "RelativePath": "api/DashboardMontant/requete-montant",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.DashboardRetardController",
+    "Method": "GetRequetesEnRetard",
+    "RelativePath": "api/DashboardRetard/requete-retard",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.DashboardSuiviTraitementRequeteController",
+    "Method": "GetEtapesCircuit",
+    "RelativePath": "api/DashboardSuiviTraitementRequete/etapes-circuit/{idCircuit}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCircuit",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.DashboardSuiviTraitementRequeteController",
+    "Method": "GetSuiviTraitementRequete",
+    "RelativePath": "api/DashboardSuiviTraitementRequete/requete-suivi-traitement",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idProjet",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "idSite",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "idCircuit",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "dateDebut",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "dateFin",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "numRequete",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "referenceInterne",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.DistanceController",
+    "Method": "GetDistance",
+    "RelativePath": "api/Distance",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "from",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "to",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.DistanceController",
+    "Method": "GetVilles",
+    "RelativePath": "api/Distance/villes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.EnteteController",
+    "Method": "GetAllEntetex",
+    "RelativePath": "api/Entete",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.EnteteController",
+    "Method": "CreateEntete",
+    "RelativePath": "api/Entete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Entete",
+        "Type": "UCP_API.models.Entete",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.EnteteController",
+    "Method": "UpdateEntete",
+    "RelativePath": "api/Entete/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Entete",
+        "Type": "UCP_API.models.Entete",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.EnteteController",
+    "Method": "DeleteEntete",
+    "RelativePath": "api/Entete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.EnteteController",
+    "Method": "CreateEnteteForUser",
+    "RelativePath": "api/Entete/forUser/{idUtilisateur}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Entete",
+        "Type": "UCP_API.models.Entete",
+        "IsRequired": true
+      },
+      {
+        "Name": "idUtilisateur",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.EnteteController",
+    "Method": "GetEnteteBySpecificUser",
+    "RelativePath": "api/Entete/user/{idUtilisateur}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUtilisateur",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.EnteteController",
+    "Method": "GetEnteteByUtilisateur",
+    "RelativePath": "api/Entete/utilisateur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.EnteteController",
+    "Method": "CheckEnteteByUtilisateur",
+    "RelativePath": "api/Entete/utilisateur/check",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationJustificatifPjController",
+    "Method": "GetAllHistoriqueValidationJustificatifPjx",
+    "RelativePath": "api/HistoriqueValidationJustificatifPj",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationJustificatifPjController",
+    "Method": "CreateHistoriqueValidationJustificatifPj",
+    "RelativePath": "api/HistoriqueValidationJustificatifPj",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HistoriqueValidationJustificatifPj",
+        "Type": "UCP_API.models.HistoriqueValidationJustificatifPj",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationJustificatifPjController",
+    "Method": "UpdateHistoriqueValidationJustificatifPj",
+    "RelativePath": "api/HistoriqueValidationJustificatifPj",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HistoriqueValidationJustificatifPj",
+        "Type": "UCP_API.models.HistoriqueValidationJustificatifPj",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationJustificatifPjController",
+    "Method": "GetHistoriqueValidationJustificatifPj",
+    "RelativePath": "api/HistoriqueValidationJustificatifPj/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationJustificatifPjController",
+    "Method": "DeleteHistoriqueValidationJustificatifPj",
+    "RelativePath": "api/HistoriqueValidationJustificatifPj/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationJustificatifPjController",
+    "Method": "GetAllHistoriqueValidationRequetesByRequete",
+    "RelativePath": "api/HistoriqueValidationJustificatifPj/justificatif/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationJustificatifPjController",
+    "Method": "GetAllHistoriqueValidationJustificatifByRequeteDeleted",
+    "RelativePath": "api/HistoriqueValidationJustificatifPj/justificatif/{id}/Deleted",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationJustificatifPjController",
+    "Method": "GetAllHistoriqueValidationJustificatifByRequeteNotDeleted",
+    "RelativePath": "api/HistoriqueValidationJustificatifPj/justificatif/{id}/NotDeleted",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationJustificatifPjController",
+    "Method": "PreviewValidationPj",
+    "RelativePath": "api/HistoriqueValidationJustificatifPj/preview/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequeteController",
+    "Method": "GetAllHistoriqueValidationRequetex",
+    "RelativePath": "api/HistoriqueValidationRequete",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequeteController",
+    "Method": "CreateHistoriqueValidationRequete",
+    "RelativePath": "api/HistoriqueValidationRequete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HistoriqueValidationRequete",
+        "Type": "UCP_API.models.HistoriqueValidationRequete",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequeteController",
+    "Method": "UpdateHistoriqueValidationRequete",
+    "RelativePath": "api/HistoriqueValidationRequete",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HistoriqueValidationRequete",
+        "Type": "UCP_API.models.HistoriqueValidationRequete",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequeteController",
+    "Method": "GetHistoriqueValidationRequete",
+    "RelativePath": "api/HistoriqueValidationRequete/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequeteController",
+    "Method": "DeleteHistoriqueValidationRequete",
+    "RelativePath": "api/HistoriqueValidationRequete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequetePjController",
+    "Method": "GetAllHistoriqueValidationRequetePjx",
+    "RelativePath": "api/HistoriqueValidationRequetePj",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequetePjController",
+    "Method": "CreateHistoriqueValidationRequetePj",
+    "RelativePath": "api/HistoriqueValidationRequetePj",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HistoriqueValidationRequetePj",
+        "Type": "UCP_API.models.HistoriqueValidationRequetePj",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequetePjController",
+    "Method": "UpdateHistoriqueValidationRequetePj",
+    "RelativePath": "api/HistoriqueValidationRequetePj",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HistoriqueValidationRequetePj",
+        "Type": "UCP_API.models.HistoriqueValidationRequetePj",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequetePjController",
+    "Method": "GetHistoriqueValidationRequetePj",
+    "RelativePath": "api/HistoriqueValidationRequetePj/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequetePjController",
+    "Method": "DeleteHistoriqueValidationRequetePj",
+    "RelativePath": "api/HistoriqueValidationRequetePj/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequetePjController",
+    "Method": "PreviewValidationPj",
+    "RelativePath": "api/HistoriqueValidationRequetePj/preview/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequetePjController",
+    "Method": "GetAllHistoriqueValidationRequetesByRequete",
+    "RelativePath": "api/HistoriqueValidationRequetePj/requete/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequetePjController",
+    "Method": "GetAllHistoriqueValidationRequetesByRequeteDeleted",
+    "RelativePath": "api/HistoriqueValidationRequetePj/requete/{id}/Deleted",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.HistoriqueValidationRequetePjController",
+    "Method": "GetAllHistoriqueValidationRequetesByRequeteNotDeleted",
+    "RelativePath": "api/HistoriqueValidationRequetePj/requete/{id}/NotDeleted",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifDetailsController",
+    "Method": "GetAllJustifDetailsx",
+    "RelativePath": "api/JustifDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifDetailsController",
+    "Method": "CreateJustifDetails",
+    "RelativePath": "api/JustifDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JustifDetails",
+        "Type": "UCP_API.models.JustifDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifDetailsController",
+    "Method": "UpdateJustifDetails",
+    "RelativePath": "api/JustifDetails",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JustifDetails",
+        "Type": "UCP_API.models.JustifDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifDetailsController",
+    "Method": "GetUnit",
+    "RelativePath": "api/JustifDetails/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifDetailsController",
+    "Method": "DeleteUnit",
+    "RelativePath": "api/JustifDetails/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifDetailsController",
+    "Method": "UpdateJustifDetailss",
+    "RelativePath": "api/JustifDetails/montant_valide",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JustifDetailsDTO",
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.models.JustifDetailsDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetAllJustificatifx",
+    "RelativePath": "api/Justificatif",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "CreateJustificatif",
+    "RelativePath": "api/Justificatif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "justificatifstring",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "justificatifs",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "UpdateJustificatif",
+    "RelativePath": "api/Justificatif",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Justificatif",
+        "Type": "UCP_API.models.Justificatif",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustificatif",
+    "RelativePath": "api/Justificatif/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "DeleteJustificatif",
+    "RelativePath": "api/Justificatif/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsArattacher",
+    "RelativePath": "api/Justificatif/a_rattacher/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsArattacher",
+    "RelativePath": "api/Justificatif/a_rattacher/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsArattacher",
+    "RelativePath": "api/Justificatif/a_rattacher/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsArattacher",
+    "RelativePath": "api/Justificatif/a_rattacher/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifAreviserByUtilisatueur",
+    "RelativePath": "api/Justificatif/a_reviser/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifAreviserByUtilisateur",
+    "RelativePath": "api/Justificatif/a_reviser/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifAreviserByUtilisatueur",
+    "RelativePath": "api/Justificatif/a_reviser/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifAreviserByUtilisateur",
+    "RelativePath": "api/Justificatif/a_reviser/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsValider",
+    "RelativePath": "api/Justificatif/a_valider/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsValider",
+    "RelativePath": "api/Justificatif/a_valider/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsValider",
+    "RelativePath": "api/Justificatif/a_valider/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsValider",
+    "RelativePath": "api/Justificatif/a_valider/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifEnCoursAdmin",
+    "RelativePath": "api/Justificatif/admin/en_cours/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifEnCoursAdmin",
+    "RelativePath": "api/Justificatif/admin/en_cours/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifEnCoursAdmin",
+    "RelativePath": "api/Justificatif/admin/en_cours/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifEnCoursAdmin",
+    "RelativePath": "api/Justificatif/admin/en_cours/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifRefuseesAdmin",
+    "RelativePath": "api/Justificatif/admin/refuses/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifRefuseesAdmin",
+    "RelativePath": "api/Justificatif/admin/refuses/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifRefuseesAdmin",
+    "RelativePath": "api/Justificatif/admin/refuses/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifRefuseesAdmin",
+    "RelativePath": "api/Justificatif/admin/refuses/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsEnCoursByUtilisatueur",
+    "RelativePath": "api/Justificatif/en_cours/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsEnCoursByUtilisatueur",
+    "RelativePath": "api/Justificatif/en_cours/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsEnCoursByUtilisatueur",
+    "RelativePath": "api/Justificatif/en_cours/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsEnCoursByUtilisatueur",
+    "RelativePath": "api/Justificatif/en_cours/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "getEtats",
+    "RelativePath": "api/Justificatif/etats_justifs",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "getEtatsAdmin",
+    "RelativePath": "api/Justificatif/etats_justifs/admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "getEtatsValidateur",
+    "RelativePath": "api/Justificatif/etats_justifs/validateur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifInitiesByUtilisatueur",
+    "RelativePath": "api/Justificatif/initiees/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifInitiesByUtilisateur",
+    "RelativePath": "api/Justificatif/initiees/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifInitiesByUtilisatueur",
+    "RelativePath": "api/Justificatif/initiees/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifInitiesByUtilisateur",
+    "RelativePath": "api/Justificatif/initiees/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNBJustifRequete",
+    "RelativePath": "api/Justificatif/nbjustif/requete/{idRequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "RecallerManquePj",
+    "RelativePath": "api/Justificatif/recaller_manque_pj/{idJustif}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idJustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "commentaireRevision",
+        "Type": "UCP_API.dto.StringData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsrefusesByUtilisatueur",
+    "RelativePath": "api/Justificatif/refuses/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsrefusesByUtilisatueur",
+    "RelativePath": "api/Justificatif/refuses/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsrefusesByUtilisatueur",
+    "RelativePath": "api/Justificatif/refuses/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsrefusesByUtilisatueur",
+    "RelativePath": "api/Justificatif/refuses/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetDetailsJustifRequete",
+    "RelativePath": "api/Justificatif/requete/{idRequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifEnCoursValidateur",
+    "RelativePath": "api/Justificatif/validateur/en_cours/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifEnCoursValidateur",
+    "RelativePath": "api/Justificatif/validateur/en_cours/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifEnCoursValidateur",
+    "RelativePath": "api/Justificatif/validateur/en_cours/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifEnCoursValidateur",
+    "RelativePath": "api/Justificatif/validateur/en_cours/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifRefuseesValidateur",
+    "RelativePath": "api/Justificatif/validateur/refuses/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifRefuseesValidateur",
+    "RelativePath": "api/Justificatif/validateur/refuses/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifRefuseesValidateur",
+    "RelativePath": "api/Justificatif/validateur/refuses/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifRefuseesValidateur",
+    "RelativePath": "api/Justificatif/validateur/refuses/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsAvalider",
+    "RelativePath": "api/Justificatif/validateur/valides/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsValidesValidateur",
+    "RelativePath": "api/Justificatif/validateur/valides/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsAvalider",
+    "RelativePath": "api/Justificatif/validateur/valides/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsValidesValidateur",
+    "RelativePath": "api/Justificatif/validateur/valides/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsValidesByUtilisatueur",
+    "RelativePath": "api/Justificatif/valides/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsValidesByUtilisateur",
+    "RelativePath": "api/Justificatif/valides/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetJustifsValidesByUtilisatueur",
+    "RelativePath": "api/Justificatif/valides/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustificatifController",
+    "Method": "GetNbJustifsValidesByUtilisateur",
+    "RelativePath": "api/Justificatif/valides/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifPjController",
+    "Method": "GetAllJustifPjx",
+    "RelativePath": "api/JustifPj",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifPjController",
+    "Method": "UpdateJustifPj",
+    "RelativePath": "api/JustifPj",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "JustifPj",
+        "Type": "UCP_API.models.JustifPj",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifPjController",
+    "Method": "GetJustifPj",
+    "RelativePath": "api/JustifPj/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifPjController",
+    "Method": "DeleteJustifPj",
+    "RelativePath": "api/JustifPj/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifPjController",
+    "Method": "DownloadJustificatif",
+    "RelativePath": "api/JustifPj/download/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifPjController",
+    "Method": "GetJustificatifsByRequeteId",
+    "RelativePath": "api/JustifPj/justificatif/{idJustificatif}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idJustificatif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.JustifPjController",
+    "Method": "CreateJustifPj",
+    "RelativePath": "api/JustifPj/justificatifs/{idJustif}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "justificatifs",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "idJustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ProjetController",
+    "Method": "GetAllProjet",
+    "RelativePath": "api/Projet",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ProjetController",
+    "Method": "CreateProjet",
+    "RelativePath": "api/Projet",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Projet",
+        "Type": "UCP_API.models.Projet",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ProjetController",
+    "Method": "UpdateProjet",
+    "RelativePath": "api/Projet",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Projet",
+        "Type": "UCP_API.models.Projet",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ProjetController",
+    "Method": "GetProjet",
+    "RelativePath": "api/Projet/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ProjetController",
+    "Method": "DeleteProjet",
+    "RelativePath": "api/Projet/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ProjetController",
+    "Method": "GetProjetByUserAutorises",
+    "RelativePath": "api/Projet/autorise_demande",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ProjetController",
+    "Method": "GetDatabases",
+    "RelativePath": "api/Projet/databases",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dBConnexionDetails",
+        "Type": "UCP_API.dto.DBConnexionDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.ProjetController",
+    "Method": "GetProjetByUser",
+    "RelativePath": "api/Projet/projetsbyuser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetAllRequetex",
+    "RelativePath": "api/Requete",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "CreateRequete",
+    "RelativePath": "api/Requete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RequeteData",
+        "Type": "UCP_API.dto.RequeteData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "UpdateRequete",
+    "RelativePath": "api/Requete",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Requete",
+        "Type": "UCP_API.models.Requete",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequete",
+    "RelativePath": "api/Requete/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "DeleteRequete",
+    "RelativePath": "api/Requete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetSommeCategoriesRequete",
+    "RelativePath": "api/Requete/{id}/recap_categories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "UpdateRequete",
+    "RelativePath": "api/Requete/{idRequete}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RequeteData",
+        "Type": "UCP_API.dto.RequeteData",
+        "IsRequired": true
+      },
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "UpdateRequeteDate",
+    "RelativePath": "api/Requete/{idRequete}/date_execution/{DateExecution}/date_fin_execution/{DateFinExecution}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "DateExecution",
+        "Type": "System.DateOnly",
+        "IsRequired": true
+      },
+      {
+        "Name": "DateFinExecution",
+        "Type": "System.DateOnly",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesAcloturer",
+    "RelativePath": "api/Requete/a_cloturer/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageACloturees",
+    "RelativePath": "api/Requete/a_cloturer/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesAcloturer",
+    "RelativePath": "api/Requete/a_cloturer/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageACloturees",
+    "RelativePath": "api/Requete/a_cloturer/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesAjustifier",
+    "RelativePath": "api/Requete/a_justifier/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageRequetesAjustifier",
+    "RelativePath": "api/Requete/a_justifier/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesAjustifierByWord",
+    "RelativePath": "api/Requete/a_justifier/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageRequetesAjustifierByWord",
+    "RelativePath": "api/Requete/a_justifier/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesToValidate",
+    "RelativePath": "api/Requete/a_valider/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageAvalider",
+    "RelativePath": "api/Requete/a_valider/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesToValidate",
+    "RelativePath": "api/Requete/a_valider/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageAvalider",
+    "RelativePath": "api/Requete/a_valider/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesAcloturerAdmin",
+    "RelativePath": "api/Requete/admin/a_cloturer/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageAClotureesAdmin",
+    "RelativePath": "api/Requete/admin/a_cloturer/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesAcloturerAdmin",
+    "RelativePath": "api/Requete/admin/a_cloturer/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageAClotureesAdmin",
+    "RelativePath": "api/Requete/admin/a_cloturer/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbRequetesClotureesAdmin",
+    "RelativePath": "api/Requete/admin/cloturees/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesClotureesAdmin",
+    "RelativePath": "api/Requete/admin/cloturees/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbRequetesClotureesAdmin",
+    "RelativePath": "api/Requete/admin/cloturees/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesClotureesAdminByWord",
+    "RelativePath": "api/Requete/admin/cloturees/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesEnCoursAdmin",
+    "RelativePath": "api/Requete/admin/en_cours/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageAdminEnCours",
+    "RelativePath": "api/Requete/admin/en_cours/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesEnCoursAdminByWord",
+    "RelativePath": "api/Requete/admin/en_cours/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageAdminEnCours",
+    "RelativePath": "api/Requete/admin/en_cours/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesRefuseesAdmin",
+    "RelativePath": "api/Requete/admin/refusees/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbRequetesRefuseesAdmin",
+    "RelativePath": "api/Requete/admin/refusees/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesRefuseesAdmin",
+    "RelativePath": "api/Requete/admin/refusees/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbRequetesRefuseesAdmin",
+    "RelativePath": "api/Requete/admin/refusees/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesValidesAdmin",
+    "RelativePath": "api/Requete/admin/valides/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageAdminValides",
+    "RelativePath": "api/Requete/admin/valides/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageAdminValides",
+    "RelativePath": "api/Requete/admin/valides/word{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesValidesAdmin",
+    "RelativePath": "api/Requete/admin/valides/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "CheckDroitAjoutPj",
+    "RelativePath": "api/Requete/check_droit_ajout_pj/date_creation/{dateCreation}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dateCreation",
+        "Type": "System.DateTime",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "CheckDroit",
+    "RelativePath": "api/Requete/checkdroit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesCloturees",
+    "RelativePath": "api/Requete/cloturees/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageCloturees",
+    "RelativePath": "api/Requete/cloturees/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesClotureesByWord",
+    "RelativePath": "api/Requete/cloturees/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageClotureesByWord",
+    "RelativePath": "api/Requete/cloturees/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "cloturer",
+    "RelativePath": "api/Requete/cloturer/{idRequete}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetDetailsRequeteRubriqueMultiple",
+    "RelativePath": "api/Requete/details_rubrique_multiple/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetDetailsRequete",
+    "RelativePath": "api/Requete/details/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesEnCoursByUtilisatueur",
+    "RelativePath": "api/Requete/en_cours/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageEnCours",
+    "RelativePath": "api/Requete/en_cours/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesEnCoursByUtilisatueurAndWord",
+    "RelativePath": "api/Requete/en_cours/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageEnCoursByWord",
+    "RelativePath": "api/Requete/en_cours/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "getEtats",
+    "RelativePath": "api/Requete/etats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "getEtatsAdmin",
+    "RelativePath": "api/Requete/etats/admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "getEtatsValidateur",
+    "RelativePath": "api/Requete/etats/validateur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesInitieesByUtilisatueur",
+    "RelativePath": "api/Requete/initiees/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageInitiees",
+    "RelativePath": "api/Requete/initiees/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesInitieesByUtilisatueurAndWord",
+    "RelativePath": "api/Requete/initiees/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageInitieesByWord",
+    "RelativePath": "api/Requete/initiees/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesManquePjByUtilisatueur",
+    "RelativePath": "api/Requete/manque_pj/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageManquePj",
+    "RelativePath": "api/Requete/manque_pj/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesManquePjByUtilisatueurAndWord",
+    "RelativePath": "api/Requete/manque_pj/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageManquePjByWord",
+    "RelativePath": "api/Requete/manque_pj/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "RecallerManquePj",
+    "RelativePath": "api/Requete/recaller_manque_pj/{idRequete}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "commentaireRevision",
+        "Type": "UCP_API.dto.StringData",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesRefusees",
+    "RelativePath": "api/Requete/refusees",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesRefusees",
+    "RelativePath": "api/Requete/refusees/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbRequetesRefusees",
+    "RelativePath": "api/Requete/refusees/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesRefusees",
+    "RelativePath": "api/Requete/refusees/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbRequetesRefusees",
+    "RelativePath": "api/Requete/refusees/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetAllRequetex",
+    "RelativePath": "api/Requete/requete/{idRequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesByUtilisatueur",
+    "RelativePath": "api/Requete/requetesutilisateur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "UpdateRequete",
+    "RelativePath": "api/Requete/tompro/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "UpdateRequeteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesValideesMinistereByUtilisatueur",
+    "RelativePath": "api/Requete/v_ministere/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageVm",
+    "RelativePath": "api/Requete/v_ministere/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesValideesMinistereByUtilisatueurByPage",
+    "RelativePath": "api/Requete/v_ministere/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageVmByPage",
+    "RelativePath": "api/Requete/v_ministere/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbRequetesClotureesValidateur",
+    "RelativePath": "api/Requete/validateur/cloturees/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesClotureesValidateur",
+    "RelativePath": "api/Requete/validateur/cloturees/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbRequetesClotureesValidateur",
+    "RelativePath": "api/Requete/validateur/cloturees/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesClotureesValidateurByWord",
+    "RelativePath": "api/Requete/validateur/cloturees/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesEnCoursValidateur",
+    "RelativePath": "api/Requete/validateur/en_cours/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageValidateurEnCours",
+    "RelativePath": "api/Requete/validateur/en_cours/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesEnCoursValidateurByWord",
+    "RelativePath": "api/Requete/validateur/en_cours/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageValidateurEnCours",
+    "RelativePath": "api/Requete/validateur/en_cours/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesOfValidateurByUtilisatueur",
+    "RelativePath": "api/Requete/validateur/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageValidateur",
+    "RelativePath": "api/Requete/validateur/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesRefuseesValidateur",
+    "RelativePath": "api/Requete/validateur/refusees/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbRequetesRefuseesValidateur",
+    "RelativePath": "api/Requete/validateur/refusees/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesRefuseesValidateur",
+    "RelativePath": "api/Requete/validateur/refusees/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbRequetesRefuseesValidateur",
+    "RelativePath": "api/Requete/validateur/refusees/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesValidesValidateur",
+    "RelativePath": "api/Requete/validateur/valides/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageValidateurValides",
+    "RelativePath": "api/Requete/validateur/valides/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageValidateurValides",
+    "RelativePath": "api/Requete/validateur/valides/word{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesValidesValidateur",
+    "RelativePath": "api/Requete/validateur/valides/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetRequetesOfValidateurByUtilisatueurByWord",
+    "RelativePath": "api/Requete/validateur/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteController",
+    "Method": "GetNbPageValidateur",
+    "RelativePath": "api/Requete/validateur/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteJustificatifController",
+    "Method": "GetAllRequeteJustificatifx",
+    "RelativePath": "api/RequeteJustificatif",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteJustificatifController",
+    "Method": "UpdateRequeteJustificatif",
+    "RelativePath": "api/RequeteJustificatif",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RequeteJustificatif",
+        "Type": "UCP_API.models.RequeteJustificatif",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteJustificatifController",
+    "Method": "GetRequeteJustificatif",
+    "RelativePath": "api/RequeteJustificatif/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteJustificatifController",
+    "Method": "DeleteRequeteJustificatif",
+    "RelativePath": "api/RequeteJustificatif/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteJustificatifController",
+    "Method": "DownloadJustificatif",
+    "RelativePath": "api/RequeteJustificatif/download/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteJustificatifController",
+    "Method": "GetRequeteJustificatifByIdJustif",
+    "RelativePath": "api/RequeteJustificatif/justificatif/{idJustificatif}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idJustificatif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteJustificatifController",
+    "Method": "CreateRequeteJustificatif",
+    "RelativePath": "api/RequeteJustificatif/justificatifs/{idRequete}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "justificatifs",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile[]",
+        "IsRequired": false
+      },
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteJustificatifController",
+    "Method": "GetJustificatifsByRequeteId",
+    "RelativePath": "api/RequeteJustificatif/requete/{idRequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteRubriqueController",
+    "Method": "GetAllRequeteRubriquex",
+    "RelativePath": "api/RequeteRubrique",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteRubriqueController",
+    "Method": "CreateRequeteRubrique",
+    "RelativePath": "api/RequeteRubrique",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RequeteRubrique",
+        "Type": "UCP_API.models.RequeteRubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteRubriqueController",
+    "Method": "UpdateRequeteRubrique",
+    "RelativePath": "api/RequeteRubrique",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RequeteRubrique",
+        "Type": "UCP_API.models.RequeteRubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteRubriqueController",
+    "Method": "GetRequeteRubrique",
+    "RelativePath": "api/RequeteRubrique/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteRubriqueController",
+    "Method": "DeleteRequeteRubrique",
+    "RelativePath": "api/RequeteRubrique/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RequeteRubriqueController",
+    "Method": "UpdateRequeteRubriques",
+    "RelativePath": "api/RequeteRubrique/list",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RequeteRubriques",
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.models.RequeteRubrique, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RoleController",
+    "Method": "GetAllRolex",
+    "RelativePath": "api/Role",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RoleController",
+    "Method": "CreateRole",
+    "RelativePath": "api/Role",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Role",
+        "Type": "UCP_API.models.Role",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RoleController",
+    "Method": "UpdateRole",
+    "RelativePath": "api/Role",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Role",
+        "Type": "UCP_API.models.Role",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RoleController",
+    "Method": "GetRole",
+    "RelativePath": "api/Role/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RoleController",
+    "Method": "DeleteRole",
+    "RelativePath": "api/Role/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueController",
+    "Method": "GetAllRubriquex",
+    "RelativePath": "api/Rubrique",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueController",
+    "Method": "CreateRubrique",
+    "RelativePath": "api/Rubrique",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Rubrique",
+        "Type": "UCP_API.models.Rubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueController",
+    "Method": "UpdateRubrique",
+    "RelativePath": "api/Rubrique",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Rubrique",
+        "Type": "UCP_API.models.Rubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueController",
+    "Method": "GetRubrique",
+    "RelativePath": "api/Rubrique/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueController",
+    "Method": "DeleteRubrique",
+    "RelativePath": "api/Rubrique/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueController",
+    "Method": "GetRubriquesByCategorie",
+    "RelativePath": "api/Rubrique/categorie/{idCategorieRubrique}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idCategorieRubrique",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueController",
+    "Method": "GetRubriquesByCategorie",
+    "RelativePath": "api/Rubrique/requete/{idrequete}/categorie/{idCategorieRubrique}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idCategorieRubrique",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueCategorieRubriqueController",
+    "Method": "GetAllRubriqueCategorieRubriquex",
+    "RelativePath": "api/RubriqueCategorieRubrique",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueCategorieRubriqueController",
+    "Method": "CreateRubriqueCategorieRubrique",
+    "RelativePath": "api/RubriqueCategorieRubrique",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RubriqueCategorieRubrique",
+        "Type": "UCP_API.models.RubriqueCategorieRubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueCategorieRubriqueController",
+    "Method": "UpdateRubriqueCategorieRubrique",
+    "RelativePath": "api/RubriqueCategorieRubrique",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RubriqueCategorieRubrique",
+        "Type": "UCP_API.models.RubriqueCategorieRubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueCategorieRubriqueController",
+    "Method": "GetRubriqueCategorieRubrique",
+    "RelativePath": "api/RubriqueCategorieRubrique/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueCategorieRubriqueController",
+    "Method": "DeleteRubriqueCategorieRubrique",
+    "RelativePath": "api/RubriqueCategorieRubrique/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.RubriqueCategorieRubriqueController",
+    "Method": "CreateRubriqueCategorieRubriques",
+    "RelativePath": "api/RubriqueCategorieRubrique/batch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "RubriqueCategorieRubriques",
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.models.RubriqueCategorieRubrique, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.SiteController",
+    "Method": "GetAllSites",
+    "RelativePath": "api/Site",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.SiteController",
+    "Method": "CreateSite",
+    "RelativePath": "api/Site",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Site",
+        "Type": "UCP_API.models.Site",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.SiteController",
+    "Method": "UpdateSite",
+    "RelativePath": "api/Site",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Site",
+        "Type": "UCP_API.models.Site",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.SiteController",
+    "Method": "GetSite",
+    "RelativePath": "api/Site/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.SiteController",
+    "Method": "DeleteSite",
+    "RelativePath": "api/Site/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.SiteController",
+    "Method": "ImportSites",
+    "RelativePath": "api/Site/import",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.SiteController",
+    "Method": "GetSitesByUser",
+    "RelativePath": "api/Site/sitesbyuser",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.SqlServerConnexionController",
+    "Method": "GetAllDatabases",
+    "RelativePath": "api/SqlServerConnexion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "servername",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "login",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TraitementJustifController",
+    "Method": "DetachCircuit",
+    "RelativePath": "api/TraitementJustif/detachementcircuitjustif/{idjustif}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TraitementJustifController",
+    "Method": "GetValidationHistory",
+    "RelativePath": "api/TraitementJustif/gethistojustif/{idjustif}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.HistoValidationDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TraitementJustifController",
+    "Method": "GetRedirectionHistory",
+    "RelativePath": "api/TraitementJustif/gethistojustifredirection/{idjustif}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.HistoValidationDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TraitementJustifController",
+    "Method": "GetRefusHistory",
+    "RelativePath": "api/TraitementJustif/gethistojustifrefus/{idjustif}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.HistoValidationDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TraitementJustifController",
+    "Method": "AttachCircuit",
+    "RelativePath": "api/TraitementJustif/rattachementcircuitjustif/{idjustif}/{idcircuit}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idcircuit",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TraitementJustifController",
+    "Method": "ReceptionJustif",
+    "RelativePath": "api/TraitementJustif/receptionjustif/{idjustif}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TraitementJustifController",
+    "Method": "RedirectionRequete",
+    "RelativePath": "api/TraitementJustif/redirectionjustif/{idjustif}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "redirection",
+        "Type": "UCP_API.dto.RedirectionJustifDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TraitementJustifController",
+    "Method": "RefusJustife",
+    "RelativePath": "api/TraitementJustif/refusjustif/{idjustif}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "refus",
+        "Type": "UCP_API.dto.RefusJustifDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TraitementJustifController",
+    "Method": "ValidationRequete",
+    "RelativePath": "api/TraitementJustif/validationjustif/{idjustif}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "validationnext",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "justificatifs",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TraitementJustifController",
+    "Method": "ValidationJustif",
+    "RelativePath": "api/TraitementJustif/validationmultiplejustif",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idjustif",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "DetachCircuit",
+    "RelativePath": "api/TraitementRequete/detachementcircuitrequete/{idrequete}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "GetValidationHistory",
+    "RelativePath": "api/TraitementRequete/gethisto/{idrequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.HistoValidationDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "GetRedirectionHistory",
+    "RelativePath": "api/TraitementRequete/gethistoredirection/{idrequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.HistoValidationDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "GetRefusHistory",
+    "RelativePath": "api/TraitementRequete/gethistorefus/{idrequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.dto.HistoValidationDTO, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "AttachCircuit",
+    "RelativePath": "api/TraitementRequete/rattachementcircuitrequete/{idrequete}/{idcircuit}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idcircuit",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "ReceptionRequete",
+    "RelativePath": "api/TraitementRequete/receptionrequete/{idrequete}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "RedirectionRequete",
+    "RelativePath": "api/TraitementRequete/redirectionrequete/{idrequete}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "redirection",
+        "Type": "UCP_API.dto.RedirectionRequeteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "RefusRequete",
+    "RelativePath": "api/TraitementRequete/refusrequete/{idrequete}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "refus",
+        "Type": "UCP_API.dto.RefusRequeteDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "Send",
+    "RelativePath": "api/TraitementRequete/sendnotifwhatsapp/{to}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "to",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "ValidationRequete",
+    "RelativePath": "api/TraitementRequete/validationmultiplerequete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApplication2.Controllers.TraitementRequeteController",
+    "Method": "ValidationRequete",
+    "RelativePath": "api/TraitementRequete/validationrequete/{idrequete}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idrequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "validationnext",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "justificatifs",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile[]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeCategorieRubriqueController",
+    "Method": "GetAllTypeCategorieRubriquex",
+    "RelativePath": "api/TypeCategorieRubrique",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeCategorieRubriqueController",
+    "Method": "CreateTypeCategorieRubrique",
+    "RelativePath": "api/TypeCategorieRubrique",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeCategorieRubrique",
+        "Type": "UCP_API.models.TypeCategorieRubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeCategorieRubriqueController",
+    "Method": "UpdateTypeCategorieRubrique",
+    "RelativePath": "api/TypeCategorieRubrique",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeCategorieRubrique",
+        "Type": "UCP_API.models.TypeCategorieRubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeCategorieRubriqueController",
+    "Method": "GetTypeCategorieRubrique",
+    "RelativePath": "api/TypeCategorieRubrique/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeCategorieRubriqueController",
+    "Method": "DeleteTypeCategorieRubrique",
+    "RelativePath": "api/TypeCategorieRubrique/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeCategorieRubriqueController",
+    "Method": "CreateTypeCategorieRubriques",
+    "RelativePath": "api/TypeCategorieRubrique/batch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeCategorieRubriques",
+        "Type": "System.Collections.Generic.List\u00601[[UCP_API.models.TypeCategorieRubrique, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRequeteController",
+    "Method": "GetAllTypeRequetes",
+    "RelativePath": "api/TypeRequete",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRequeteController",
+    "Method": "CreateTypeRequete",
+    "RelativePath": "api/TypeRequete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeRequete",
+        "Type": "UCP_API.models.TypeRequete",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRequeteController",
+    "Method": "UpdateTypeRequete",
+    "RelativePath": "api/TypeRequete",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeRequete",
+        "Type": "UCP_API.models.TypeRequete",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRequeteController",
+    "Method": "GetTypeRequete",
+    "RelativePath": "api/TypeRequete/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRequeteController",
+    "Method": "DeleteTypeRequete",
+    "RelativePath": "api/TypeRequete/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRubriqueController",
+    "Method": "GetAllTypeRubriquex",
+    "RelativePath": "api/TypeRubrique",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRubriqueController",
+    "Method": "CreateTypeRubrique",
+    "RelativePath": "api/TypeRubrique",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeRubrique",
+        "Type": "UCP_API.models.TypeRubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRubriqueController",
+    "Method": "UpdateTypeRubrique",
+    "RelativePath": "api/TypeRubrique",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TypeRubrique",
+        "Type": "UCP_API.models.TypeRubrique",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRubriqueController",
+    "Method": "GetTypeRubrique",
+    "RelativePath": "api/TypeRubrique/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRubriqueController",
+    "Method": "DeleteTypeRubrique",
+    "RelativePath": "api/TypeRubrique/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRubriqueController",
+    "Method": "GetAllTypeRubriquesFormulaire",
+    "RelativePath": "api/TypeRubrique/formulaire_rubrique_data",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRubriqueController",
+    "Method": "GetAllTypeRubriquesFormulaireModificationRubriqueMultiple",
+    "RelativePath": "api/TypeRubrique/formulaire_rubrique_modification_data_rubrique_multiple/{idRequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.TypeRubriqueController",
+    "Method": "GetAllTypeRubriquesFormulaireModification",
+    "RelativePath": "api/TypeRubrique/formulaire_rubrique_modification_data/{idRequete}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UnitController",
+    "Method": "GetAllUnitx",
+    "RelativePath": "api/Unit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UnitController",
+    "Method": "CreateUnit",
+    "RelativePath": "api/Unit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Unit",
+        "Type": "UCP_API.models.Unit",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UnitController",
+    "Method": "UpdateUnit",
+    "RelativePath": "api/Unit",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Unit",
+        "Type": "UCP_API.models.Unit",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UnitController",
+    "Method": "GetUnit",
+    "RelativePath": "api/Unit/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UnitController",
+    "Method": "DeleteUnit",
+    "RelativePath": "api/Unit/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetAllUtilisateur",
+    "RelativePath": "api/Utilisateur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetUtilisateur",
+    "RelativePath": "api/Utilisateur/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "UpdateUtilisateur",
+    "RelativePath": "api/Utilisateur/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Utilisateur",
+        "Type": "UCP_API.dto.UtilisateurDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "idSites",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "idProjets",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "mailccs",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "DeleteUtilisateur",
+    "RelativePath": "api/Utilisateur/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "ChangeEntete",
+    "RelativePath": "api/Utilisateur/changeentete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "entete",
+        "Type": "UCP_API.models.Entete",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Utilisateur/changepassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UCP_API.dto.ChangePassword",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "CheckSession",
+    "RelativePath": "api/Utilisateur/check-session",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetDroitSuppPj",
+    "RelativePath": "api/Utilisateur/droitSuppHistoPj",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "getFullName",
+    "RelativePath": "api/Utilisateur/fullname",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GenerateHash",
+    "RelativePath": "api/Utilisateur/generate-hash/{password}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "password",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "Infos",
+    "RelativePath": "api/Utilisateur/infos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetAgmoByIdUser",
+    "RelativePath": "api/Utilisateur/listagmo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filtres",
+        "Type": "UCP_API.dto.FiltresDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetUtilisateurs",
+    "RelativePath": "api/Utilisateur/listeutilisateurbylisteid",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "Login",
+    "RelativePath": "api/Utilisateur/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "UCP_API.models.Login",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "Logout",
+    "RelativePath": "api/Utilisateur/logout",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "Me",
+    "RelativePath": "api/Utilisateur/me",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetUtilisateurByCookie",
+    "RelativePath": "api/Utilisateur/mee",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetUtilisateursPage",
+    "RelativePath": "api/Utilisateur/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetNbPageUtilisateur",
+    "RelativePath": "api/Utilisateur/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "UpdateUtilisateur",
+    "RelativePath": "api/Utilisateur/password",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newPasswordDTO",
+        "Type": "UCP_API.dto.ChangePasswordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "CreateUtilisateur",
+    "RelativePath": "api/Utilisateur/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Utilisateur",
+        "Type": "UCP_API.dto.UtilisateurDTO",
+        "IsRequired": true
+      },
+      {
+        "Name": "idSites",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "idProjets",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "mailccs",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetCircuitByRequete",
+    "RelativePath": "api/Utilisateur/requete/{idRequete}/circuit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idRequete",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetNbUtilisateur",
+    "RelativePath": "api/Utilisateur/total",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetUtilisateursPageAndWord",
+    "RelativePath": "api/Utilisateur/word/{word}/page/{page}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      },
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.UtilisateurController",
+    "Method": "GetNbUtilisateurByWord",
+    "RelativePath": "api/Utilisateur/word/{word}/pages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "word",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "UCP_API.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[UCP_API.WeatherForecast, UCP_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

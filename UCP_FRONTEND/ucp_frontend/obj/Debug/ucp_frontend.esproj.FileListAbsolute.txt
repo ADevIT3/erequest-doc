@@ -1,0 +1,2 @@
+C:\Users\riana\source\repos\UCP_FRONTEND\UCP_FRONTEND\obj\Debug\ucp_frontend.esproj.CoreCompileInputs.cache
+C:\Users\RINA\source\repos\UCP_FRONTEND\UCP_FRONTEND\obj\Debug\ucp_frontend.esproj.CoreCompileInputs.cache

@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\src",
+    "\\src\\api",
+    "\\src\\pages",
+    "\\src\\pages\\requetes",
+    "\\src\\pages\\requetes\\validationForm",
+    "\\src\\service"
+  ],
+  "SelectedNode": "\\src\\pages\\requetes\\validationForm\\validationPopup.tsx",
+  "PreviewInSolutionExplorer": false
+}
